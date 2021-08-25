@@ -46,9 +46,9 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">My Bosch Internship Experience</h2>
+            <h2 class="portfolio-title">My IMDA Internship Experience</h2>
             <!-- <div class="owl-carousel portfolio-details-carousel"> -->
-              <img src="assets/img/portfolio/IMG_6372.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/img_imda.jpg" class="img-fluid" alt="">
               
             </div>
           </div>
@@ -57,35 +57,56 @@
           <h3>Details</h3>
             <ul>
               <li><strong>Category</strong>: Internship</li>
-              <li><strong>Company</strong>: <a href='http://www.bosch.com.sg/' target="_blank" rel="noopener noreferrer">Bosch</a></li>
-              <li><strong>Internship Duration</strong>: Jun 2020 - Oct 2020</li>
+              <li><strong>Company</strong>: <a href="http://www.imda.gov.sg/" target="_blank" rel="noopener noreferrer">IMDA</a></li>
+              <li><strong>Internship Duration</strong>: May 2021 - Aug 2021</li>
             </ul>
         </p>
 
             <p>
-              My internship at Bosch was my first look into the industry and I am always grateful for the fulfiling and eye-opening experience. 
-              I was very lucky to have met my supervisor, William, through this internship and I would like to thank him for this opportunity.
+              I would like to thank my supervisor, Kwong Wai, for the valuable opportunity to intern at IMDA! I have learnt a lot under his mentorship and I'm truly grateful.
             </p>
             <p>
-            Spending 5 months at Bosch taught me a lot! I was involved in a shrimp size estimation project, where we used deep neural networks to identify and predict the weight of an individual shrimp. 
-            </p><p>I've learnt the basics of conducting data collection with proper documentation and data engineering using various techniques such as TFaugmentation and imgaug. Furthermore, I combined multiple preprocessing steps into one script which greatly increased our efficiency and reduced the tediousness of the data preprocessing step.
-            This was crucial as the data preprocessing part was one of the most time consuming steps in our process and reducing this meant more time for development.</p><p>Addtionally, William and I collaborated to devise and evaluate the object detection and regression models used for the size estimation. 
-            This involved a lot of experimentation of different techniques to see which worked best with the model and also helped greatly developed my problem solving skills. </p><p>Lastly, I created a flask web application with the deep learning models in backend as a proof of concept for our client, showcasing the low latency of our models.
-            The user only had to capture and upload an image of a shrimp to the web application and the predicted weight of the shrimp will be displayed on the page after a few seconds, providing convenience by easily predicting the shrimp size, compared the the traditional method of scooping the shrimp and weighing it on a scale.
+              For my IMDA internship, I was tasked to create a solution that was able to detect data exfiltration characteristics and isolate possible data exfiltration connections.
+              I decided to use data analytics to select data exfiltration features to aid in identifying possible data exfifltration behaviour.
             </p>
-            <p>These are some of the techniques and technology that I've experimented with during the internship:
+            <p>
+              To meet the objectives, I designed a two component outlier detection solution, consisting of preprocessing and visualisation.
+              The preprocessing was scoped to consider both data exfiltration and port scanning behaviour during feature selection.
+            </p>
+            <p>
+              Preprocessing process:
+              <ol>
+                <li>Data cleaning and feature engineering.</li>
+                <li>Filtering of abnormal source IPs using the Isolation forest algorithm.</li>
+                <li>Further filtering selected IPs from step 2 using specific variables.</li>
+                <li>Categorsing the IPs as normal or outlier and saving it as a dataset.</li>
+              </ol>
+
+            </p>
+            <p>
+              The second component consists of the visualisation tool that visualises the curated data from the preprocessing step. This tool was built using Streamlit.
+            </p>
+            <p>
+              Use cases for the visualisation tool:
+              <ul>
+
+                <li>Users can parse data to visualise normal and outlier data points.</li>
+                <li>Different variables can be chosen to compare amongst individual source IPs and visualised in different plots.</li>
+                <li>Distribution of data points can be visualised to gain a better overall understanding.</li>
+              </ul>
+            </p>
+
+            <p>
+              These are some of my learning points during the internship:
             
-            <ol>
-              <li>Developing OD classification and regression models using Tensorflow and Keras</li>
-              <li>Preprocessing using TFaugmentation, imgaug, OpenCV and HSV segmentation</li>
-              <li>Masking data using image annotation tool to produce binary images for Semantic Segmentation</li>
-              <li>Experimented with Zhang Suen's thinning algorithm for skeletonization</li>
-              <li>Creating and dockerising a flask web application</li>
-              <li>Heroku for deployment of web application</li>
-              <li>Gitbash and git-lfs</li>
-              <li>Encoding images in base64</li>
-              
-            </ol>
+              <ol>
+                <li>Big data preprocessing of upwards 50 million rows using PySpark</li>
+                <li>Creating a new application from scratch using Streamlit</li>
+                <li>Learning about data exfiltration behaviour and machine learning techniques for DE detection.</li>
+                <li>Implementing and finetuning Isolation Forest algorithm</li>
+                <li>Experimenting with high dimensionality density based algorithms and clustering algorithms like KModes and KPrototype.</li>
+
+              </ol>
             </p>
 
         </div>
